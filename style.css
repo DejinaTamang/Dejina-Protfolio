@@ -339,37 +339,6 @@ header.is-scrolled{border-bottom-color:var(--line);}
 }
 
 /* =========================================================
-   Resume modal
-========================================================= */
-.resume-modal{
-  position:fixed;inset:0;z-index:250;
-  display:grid;place-items:center;
-  padding:24px;
-  background:rgba(11,14,20,.6);
-}
-.resume-modal[hidden]{display:none;}
-.resume-panel{
-  width:min(920px,100%);
-  height:min(88vh,880px);
-  background:#fff;
-  border-radius:16px;
-  overflow:hidden;
-  display:flex;flex-direction:column;
-}
-.resume-head{
-  display:flex;justify-content:space-between;align-items:center;
-  padding:18px 22px;
-  border-bottom:1px solid var(--line);
-  font-family:var(--display);
-  font-weight:600;
-}
-.resume-head button{
-  background:none;border:none;font-size:26px;cursor:pointer;color:var(--ink-soft);
-  line-height:1;
-}
-.resume-frame{flex:1;width:100%;border:none;background:var(--bg-alt);}
-
-/* =========================================================
    Section shell
 ========================================================= */
 .section{padding:110px 0;}
