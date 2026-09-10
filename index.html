@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dejina Tamang — Web Developer &amp; SEO Content Strategist</title>
+<meta name="description" content="Portfolio of Dejina Tamang, BSc (Hons) Computing student at Informatics College Pokhara — web development, SEO and content strategy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-rail"><div class="progress-fill" id="progressFill"></div></div>
+
+<header id="siteHeader">
+  <div class="wrap nav-inner">
+    <a href="#top" class="mark">DT<span>.</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#work" data-nav>Work</a>
+      <a href="#education" data-nav>Education</a>
+      <a href="#awards" data-nav>Awards</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+
+    <a href="#contact" class="nav-cta">Let's talk</a>
+
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#work">Work</a>
+  <a href="#education">Education</a>
+  <a href="#awards">Awards</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="hero">
+  <div class="wrap hero-grid">
+
+    <div class="hero-copy">
+      <p class="eyebrow">Pokhara, Nepal</p>
+      <h1 class="hero-title">
+      Aspiring Web Developer passionate about SEO and Digital Content.
+      </h1>
+      <p class="hero-role">
+        <span class="role-static">Currently developing skills in</span>
+        <span class="role-rotator" id="roleRotator" aria-live="polite">
+          <span class="role-word is-active">Web Developer</span>
+          <span class="role-word">SEO Specialist</span>
+          <span class="role-word">Content Strategist</span>
+        </span>
+      </p>
+      <p class="hero-desc">
+        BSc (Hons) Computing student at Informatics College Pokhara. I build with Java, Python and JavaScript,
+        and pair that with hands-on SEO — page performance, semantic HTML, meta structure and Core Web Vitals —
+        so what I ship is both functional and findable.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-solid">View my work</a>
+        <a href="#contact" class="btn btn-line">Contact me</a>
+      </div>
+
+      <div class="hero-links">
+        <a href="https://github.com/DejinaTamang" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://linkedin.com/in/dejina-tamang-86a774393" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <button type="button" class="link-btn" id="resumeButton">Resume ↗</button>
+      </div>
+    </div>
+
+    <div class="hero-panel">
+      <div class="panel-chrome">
+        <span class="dot dot-a"></span><span class="dot dot-b"></span><span class="dot dot-c"></span>
+        <span class="panel-title">profile</span>
+      </div>
+      <div class="panel-body">
+        <div class="panel-row">
+          <span class="panel-key">location</span>
+          <span class="panel-val">Birauta, Pokhara</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-key">study</span>
+          <span class="panel-val">BSc (Hons) Computing, 2024–2027</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-key">stack</span>
+          <span class="panel-val">Java, Python, HTML, CSS, JS</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-key">focus</span>
+          <span class="panel-val">SEO, Content, Web Dev</span>
+        </div>
+        <div class="panel-divider"></div>
+        <div class="panel-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="2">0</span>
+            <span class="stat-label">Projects shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Awards &amp; certificates</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="4">0</span>
+            <span class="stat-label">Skill areas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- resume viewer -->
+<div class="resume-modal" id="resumeModal" hidden role="dialog" aria-modal="true" aria-labelledby="resumeTitle">
+  <div class="resume-panel">
+    <div class="resume-head">
+      <span id="resumeTitle">Resume — Dejina Tamang</span>
+      <button type="button" id="resumeClose" aria-label="Close">&times;</button>
+    </div>
+    <iframe class="resume-frame" src="CV_Dejina_Tamang.pdf" title="Dejina Tamang resume PDF"></iframe>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="section-label reveal-line"><span class="line-tick"></span>About</div>
+    <div class="about-grid">
+      <p class="about-lead reveal-up">
+        I care about the whole path a page takes to reach someone — from how it's built,
+        to how it performs, to whether it actually shows up in a search.
+      </p>
+      <div class="about-body reveal-up">
+        <p>
+          I'm a BIT student at Informatics College Pokhara with a strong foundation in writing, research and
+          communication, alongside practical development skills in Java, Python, HTML, CSS and JavaScript.
+        </p>
+        <p>
+          Building a full e-commerce platform taught me technical SEO from the inside — page performance, semantic
+          HTML, meta structure and Core Web Vitals aren't abstract concepts to me, they're things I've had to get
+          right in real code. I'm now developing that further into keyword research, on-page SEO and content
+          optimisation to support effective digital marketing.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section section-alt">
+  <div class="wrap">
+    <div class="section-label reveal-line"><span class="line-tick"></span>Skills</div>
+
+    <div class="bento">
+      <div class="bento-card bento-wide reveal-up">
+        <h3>Programming &amp; Development</h3>
+        <div class="chip-row">
+          <span class="chip">Java</span>
+          <span class="chip">Python</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="bento-card reveal-up">
+        <h3>SEO &amp; Content</h3>
+        <ul class="plain-list">
+          <li>Basic SEO concepts</li>
+          <li>Content writing</li>
+          <li>Content structuring for readability &amp; search intent</li>
+          <li>Proofreading &amp; editing</li>
+          <li>Meta description writing</li>
+        </ul>
+      </div>
+
+      <div class="bento-card reveal-up">
+        <h3>Research &amp; Communication</h3>
+        <ul class="plain-list">
+          <li>Research</li>
+          <li>Written &amp; verbal communication</li>
+          <li>Attention to detail</li>
+          <li>Problem-solving</li>
+        </ul>
+      </div>
+
+      <div class="bento-card bento-wide reveal-up">
+        <h3>Analytics &amp; Tools</h3>
+        <div class="chip-row">
+          <span class="chip">Google Analytics (GA4)</span>
+          <span class="chip">Google Search Console</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">IntelliJ IDEA</span>
+          <span class="chip">Apache Tomcat</span>
+          <span class="chip">VirtualBox</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK / PROJECTS ============ -->
+<section id="work" class="section">
+  <div class="wrap">
+    <div class="section-label reveal-line"><span class="line-tick"></span>Projects</div>
+
+    <article class="work-item reveal-up">
+      <div class="work-window">
+        <div class="panel-chrome">
+          <span class="dot dot-a"></span><span class="dot dot-b"></span><span class="dot dot-c"></span>
+          <span class="panel-title">mithocha</span>
+        </div>
+        <div class="work-stack">
+          <span class="chip chip-mono">Java</span>
+          <span class="chip chip-mono">JSP</span>
+          <span class="chip chip-mono">Servlets</span>
+          <span class="chip chip-mono">MySQL</span>
+          <span class="chip chip-mono">MVC</span>
+        </div>
+      </div>
+      <div class="work-copy">
+        <span class="work-index">01</span>
+        <h3>MithoCha</h3>
+        <p class="work-tag">Beverage e-commerce platform</p>
+        <p class="work-desc">
+          A Java-based e-commerce platform for online beverage ordering, built on an MVC architecture with
+          JSP, Servlets and MySQL.
+        </p>
+        <ul class="work-features">
+          <li>Built the platform end-to-end using MVC with JSP, Servlets and MySQL</li>
+          <li>Wrote and ran manual test scenarios covering product, user and order CRUD operations</li>
+          <li>Created and organised product descriptions to improve clarity and customer understanding</li>
+          <li>Structured user-facing content across product and ordering pages for a consistent experience</li>
+          <li>Tested ordering workflows to catch issues affecting content presentation and usability</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="work-item work-item-reverse reveal-up">
+      <div class="work-window">
+        <div class="panel-chrome">
+          <span class="dot dot-a"></span><span class="dot dot-b"></span><span class="dot dot-c"></span>
+          <span class="panel-title">nepal-live-trek</span>
+        </div>
+        <div class="work-stack">
+          <span class="chip chip-mono">Content strategy</span>
+          <span class="chip chip-mono">SEO</span>
+        </div>
+      </div>
+      <div class="work-copy">
+        <span class="work-index">02</span>
+        <h3>Nepal Live Trek</h3>
+        <p class="work-tag">Travel &amp; trekking platform</p>
+        <p class="work-desc">
+          A travel platform surfacing real-time weather conditions and destination information for trekking
+          locations across Nepal.
+        </p>
+        <ul class="work-features">
+          <li>Created SEO-friendly, user-focused content to improve discoverability, readability and engagement</li>
+          <li>Structured destination content around user search intent, helping travelers plan trips with confidence</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="section section-alt">
+  <div class="wrap">
+    <div class="section-label reveal-line"><span class="line-tick"></span>Education &amp; leadership</div>
+
+    <div class="timeline reveal-up">
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <span class="timeline-date">2024 – 2027</span>
+          <h3>BSc (Hons) Computing</h3>
+          <p>Informatics College Pokhara</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <span class="timeline-date">2023 – 2024</span>
+          <h3>Science</h3>
+          <p>Prativa Secondary School</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AWARDS ============ -->
+<section id="awards" class="section">
+  <div class="wrap">
+    <div class="section-label reveal-line"><span class="line-tick"></span>Certificates &amp; awards</div>
+
+    <div class="award-grid">
+      <div class="award-card reveal-up">
+        <span class="award-badge">Winner</span>
+        <h3>ICP Cause Competition</h3>
+        <p>Proposed impactful solutions to a real-world problem at a competition organised by Informatics
+          College Pokhara — 1st place, demonstrating critical thinking, problem-solving and teamwork.</p>
+      </div>
+      <div class="award-card reveal-up">
+        <span class="award-badge">1st Runner-Up</span>
+        <h3>ICP Inno-Hack</h3>
+        <p>Secured 1st Runner-Up in a hackathon hosted on the ICP platform, showcasing technical skills,
+          creative problem-solving and critical thinking.</p>
+      </div>
+      <div class="award-card reveal-up">
+        <span class="award-badge">Participation</span>
+        <h3>UNESCO Youth Hackathon 2025</h3>
+        <p>Participated in Cartagena de Indias, Colombia, submitting a project aligned with the theme
+          "Youth Leading the Way."</p>
+      </div>
+      <div class="award-card reveal-up">
+        <span class="award-badge">Certificate</span>
+        <h3>Skill Ambassador — Futurama 2024</h3>
+        <p>Informatics College Pokhara. Awarded a Certificate of Appreciation for dedication and active
+          participation, contributing to skill-building and student engagement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section section-dark">
+  <div class="wrap contact-grid">
+    <div class="contact-copy reveal-up">
+      <div class="section-label section-label-dark"><span class="line-tick"></span>Contact</div>
+      <h2>Let's build something worth finding.</h2>
+      <p>Open to internships and entry-level roles across web development, SEO and content. Reach out directly
+        or send a message.</p>
+      <div class="contact-rows">
+        <a href="mailto:dejinatmg24@gmail.com">dejinatmg24@gmail.com</a>
+        <a href="tel:+9779709006848">+977 9709006848</a>
+        <a href="https://linkedin.com/in/dejina-tamang-86a774393" target="_blank" rel="noopener">linkedin.com/in/dejina-tamang-86a774393</a>
+        <a href="https://github.com/DejinaTamang" target="_blank" rel="noopener">github.com/DejinaTamang</a>
+      </div>
+    </div>
+
+    <form class="contact-form reveal-up" id="contactForm">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Your name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com" required>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Tell me about the role or opportunity..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-solid btn-full">Send message</button>
+      <p class="form-note" id="formNote" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span class="mark">DT<span>.</span></span>
+    <p>© <span id="year"></span> Dejina Tamang. Built from the ground up, on purpose.</p>
+    <div class="footer-links">
+      <a href="https://github.com/DejinaTamang" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/dejina-tamang-86a774393" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:dejinatmg24@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
